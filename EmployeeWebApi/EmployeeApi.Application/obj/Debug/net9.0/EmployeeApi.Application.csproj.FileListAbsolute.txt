@@ -1,0 +1,16 @@
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\bin\Debug\net9.0\EmployeeApi.Application.deps.json
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\bin\Debug\net9.0\EmployeeApi.Application.dll
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\bin\Debug\net9.0\EmployeeApi.Application.pdb
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\bin\Debug\net9.0\EmployeeApi.Domain.dll
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\bin\Debug\net9.0\EmployeeApi.Domain.pdb
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\EmployeeApi.Application.csproj.AssemblyReference.cache
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\EmployeeApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\EmployeeApi.Application.AssemblyInfoInputs.cache
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\EmployeeApi.Application.AssemblyInfo.cs
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\EmployeeApi.Application.csproj.CoreCompileInputs.cache
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\EmployeeApi.Application.sourcelink.json
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\Employee.400476AA.Up2Date
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\EmployeeApi.Application.dll
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\refint\EmployeeApi.Application.dll
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\EmployeeApi.Application.pdb
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Application\obj\Debug\net9.0\ref\EmployeeApi.Application.dll

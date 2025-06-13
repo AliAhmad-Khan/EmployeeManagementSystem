@@ -1,0 +1,12 @@
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\bin\Debug\net9.0\EmployeeApi.Domain.deps.json
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\bin\Debug\net9.0\EmployeeApi.Domain.dll
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\bin\Debug\net9.0\EmployeeApi.Domain.pdb
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\EmployeeApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\EmployeeApi.Domain.AssemblyInfoInputs.cache
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\EmployeeApi.Domain.AssemblyInfo.cs
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\EmployeeApi.Domain.csproj.CoreCompileInputs.cache
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\EmployeeApi.Domain.sourcelink.json
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\EmployeeApi.Domain.dll
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\refint\EmployeeApi.Domain.dll
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\EmployeeApi.Domain.pdb
+D:\EuphoriaXR\EmployeeManagementSystem\EmployeeWebApi\EmployeeApi.Domain\obj\Debug\net9.0\ref\EmployeeApi.Domain.dll

@@ -13,3 +13,4 @@ yarn-error.log*
 
 # Ignore VS Code settings
 .vscode/
+.vs
