@@ -14,3 +14,19 @@ yarn-error.log*
 # Ignore VS Code settings
 .vscode/
 .vs
+
+# Ignore build output and intermediate files for .NET
+bin/
+obj/
+
+# Ignore frontend build output
+build/
+dist/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore system files
+.DS_Store
+Thumbs.db
