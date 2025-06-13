@@ -124,7 +124,7 @@ function App() {
   const [deleteConfirm, setDeleteConfirm] = useState({ open: false, employeeId: '', employeeName: '' });
   
   // Use the direct API URL with the api path segment
-  const apiUrl = 'https://localhost:53439';
+  const apiUrl = 'https://localhost:7009';
 
   const { data: employees = [], isLoading } = useQuery(['employees', search], () =>
     axios.get(`${apiUrl}/api/employees?search=${search}`).then(res => res.data)
