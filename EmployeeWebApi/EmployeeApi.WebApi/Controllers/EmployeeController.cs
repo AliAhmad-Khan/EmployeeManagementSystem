@@ -16,9 +16,18 @@ namespace EmployeeApi.WebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> Get([FromQuery] string? search)
         {
             var list = await _service.GetAllAsync();
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                search = search.ToLower();
+                list = list.Where(e =>
+                    (!string.IsNullOrEmpty(e.Name) && e.Name.ToLower().Contains(search)) ||
+                    (!string.IsNullOrEmpty(e.Email) && e.Email.ToLower().Contains(search)) ||
+                    (!string.IsNullOrEmpty(e.Department) && e.Department.ToLower().Contains(search))
+                ).ToList();
+            }
             return Ok(list);
         }
 

@@ -15,7 +15,6 @@ namespace EmployeeApi.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            // (Optional) Additional fluent-API configuration here
         }
     }
 }

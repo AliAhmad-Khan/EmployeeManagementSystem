@@ -33,7 +33,7 @@ namespace EmployeeApi.Application.Tests.Services
             // Arrange
             var employees = new List<Employee>
             {
-                new() { Id = Guid.NewGuid(), FirstName = "A", LastName = "B", Email="a@b.com", DateOfBirth = DateTime.Today, Department="X" }
+                new() { Id = Guid.NewGuid(), Name = "A", Email="a@b.com", DateOfBirth = DateTime.Today, Department="X" }
             };
             var repoMock = new Mock<IEmployeeRepository>();
             repoMock.Setup(r => r.GetAllAsync()).ReturnsAsync(employees);
@@ -45,7 +45,7 @@ namespace EmployeeApi.Application.Tests.Services
 
             // Assert
             dtos.Should().HaveCount(1);
-            dtos[0].FirstName.Should().Be("A");
+            dtos[0].Name.Should().Be("A");
             repoMock.Verify(r => r.GetAllAsync(), Times.Once);
         }
 
@@ -53,7 +53,7 @@ namespace EmployeeApi.Application.Tests.Services
         public async Task CreateAsync_AssignsNewGuidAndCallsAdd()
         {
             // Arrange
-            var dto = new EmployeeDto { FirstName = "X", LastName = "Y", Email = "x@y.com", DateOfBirth = DateTime.Today, Department = "D" };
+            var dto = new EmployeeDto { Name = "X", Email = "x@y.com", DateOfBirth = DateTime.Today, Department = "D" };
             var repoMock = new Mock<IEmployeeRepository>();
             var service = new EmployeeService(repoMock.Object, _mapper);
 
@@ -62,14 +62,14 @@ namespace EmployeeApi.Application.Tests.Services
 
             // Assert
             newId.Should().NotBe(Guid.Empty);
-            repoMock.Verify(r => r.AddAsync(It.Is<Employee>(e => e.Id == newId && e.FirstName == "X")), Times.Once);
+            repoMock.Verify(r => r.AddAsync(It.Is<Employee>(e => e.Id == newId && e.Name == "X")), Times.Once);
         }
 
         [Fact]
         public async Task UpdateAsync_CallsRepositoryUpdate()
         {
             // Arrange
-            var dto = new EmployeeDto { Id = Guid.NewGuid(), FirstName = "U", LastName = "P", Email = "u@p.com", DateOfBirth = DateTime.Today, Department = "Dev" };
+            var dto = new EmployeeDto { Id = Guid.NewGuid(), Name = "U", Email = "u@p.com", DateOfBirth = DateTime.Today, Department = "Dev" };
             var repoMock = new Mock<IEmployeeRepository>();
             var service = new EmployeeService(repoMock.Object, _mapper);
 

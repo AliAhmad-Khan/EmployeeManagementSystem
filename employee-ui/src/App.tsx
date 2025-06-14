@@ -303,7 +303,7 @@ function App() {
                 <TableRow key={emp.id} hover>
                   <TableCell>{emp.name}</TableCell>
                   <TableCell>{emp.email}</TableCell>
-                  <TableCell>{new Date(emp.dateOfBirth).toLocaleDateString()}</TableCell>
+                  <TableCell>{emp.dateOfBirth ? emp.dateOfBirth.split('T')[0] : ''}</TableCell>
                   <TableCell>{emp.department}</TableCell>
                   <TableCell align="center">
                     <Button 
