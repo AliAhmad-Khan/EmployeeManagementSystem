@@ -1,0 +1,50 @@
+﻿using System.Net;
+using System.Text.Json;
+using EmployeeApi.Application.Common.Exceptions;
+
+namespace EmployeeApi.WebApi.Middleware
+{
+    public class ExceptionMiddleware
+    {
+        private readonly RequestDelegate _next;
+        private readonly ILogger<ExceptionMiddleware> _logger;
+
+        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger)
+        {
+            _next = next;
+            _logger = logger;
+        }
+
+        public async Task InvokeAsync(HttpContext context)
+        {
+            try
+            {
+                await _next(context);
+            }
+            catch (AppException ex)
+            {
+                _logger.LogError(ex, ex.Message);
+
+                context.Response.ContentType = "application/json";
+                context.Response.StatusCode = ex switch
+                {
+                    NotFoundException => (int)HttpStatusCode.NotFound,
+                    _ => (int)HttpStatusCode.BadRequest
+                };
+
+                var payload = JsonSerializer.Serialize(new { error = ex.Message });
+                await context.Response.WriteAsync(payload);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Unhandled exception");
+
+                context.Response.ContentType = "application/json";
+                context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
+
+                var payload = JsonSerializer.Serialize(new { error = "An unexpected error occurred." });
+                await context.Response.WriteAsync(payload);
+            }
+        }
+    }
+}
